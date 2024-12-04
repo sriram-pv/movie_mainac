@@ -1,0 +1,43 @@
+.movie_list_header{
+    @apply px-7 py-2 flex items-center justify-between mb-1 
+}
+.movie_list_heading{
+    @apply flex items-center text-2xl 
+}
+
+.movie_list_heading{
+    color: var(--heading_color)
+}
+.movie_filter{
+    color:var(--body_color)
+}
+.movie_list_fs , .movie_filter{
+    @apply flex items-center 
+}
+
+.movie_filter {
+    @apply list-none text-base;
+  }
+  
+  .movie_filter_item {
+    @apply py-1 px-2 cursor-pointer text-base font-normal leading-none border-b-2 border-transparent;
+    height: 32px;
+  }
+  
+  .movie_filter_item.active {
+    @apply border-b-2 border-customGray font-medium;
+  }
+  
+.movie_list_fs {
+    @apply flex items-center gap-3; /* Ensure flex alignment remains consistent */
+    height: auto; /* Allow flexibility for wrapping elements */
+}
+
+
+.movie_sorting{
+    @apply border-none outline-none rounded-md text-base font-medium font-montserrat h-7 py-0 px-1 my-0 mx-1 text-black 
+}
+
+.movie_cards{
+    @apply flex flex-wrap justify-evenly
+}

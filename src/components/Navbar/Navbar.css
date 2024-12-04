@@ -1,0 +1,58 @@
+/* Main navbar container */
+.navbar {
+  @apply flex items-center justify-between p-2 pb-2 pr-7 pl-7 border-b border-solid sticky top-0 z-10;
+  background-color: var(--body_background); /* Dynamic background */
+}
+
+/* Navbar Links */
+.navbar_links a {
+  @apply no-underline;
+  color: black; /* Ensures black text in light mode */
+}
+
+.navbar_links .navbar_emoji {
+  @apply w-6 h-6 ml-2 hidden lg:flex;
+}
+
+/* Hamburger Menu */
+button[aria-label="Open Menu"],
+button[aria-label="Close Menu"] {
+  @apply lg:hidden;
+  color: black; /* Default to black in light mode */
+}
+
+[data-theme="dark"] button[aria-label="Open Menu"],
+[data-theme="dark"] button[aria-label="Close Menu"] {
+  color: white; /* Switch to white in dark mode */
+}
+
+/* Dropdown Links */
+.navbar_links .flex {
+  @apply flex-col items-start space-y-2;
+}
+
+/* Text and icon color adjustments */
+.text-black {
+  color: black !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.navbar {
+  color: var(--body_color); /* Ensures text is black in light mode and white in dark mode */
+}
+
+.navbar_links a {
+  @apply no-underline;
+  color: var(--body_color); /* Dynamic text color based on theme */
+}
+
+[data-theme="dark"] .navbar_links a {
+  color: white;
+}
+
+[data-theme="light"] .navbar_links a {
+  color: black;
+}

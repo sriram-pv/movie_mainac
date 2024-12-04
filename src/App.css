@@ -1,0 +1,3 @@
+.app{
+  @apply grid grid-rows-[80px_auto] 
+}
